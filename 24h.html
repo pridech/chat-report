@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 微信/手机适配核心标签，必须保留 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>24小时聊天分析报告</title>
+    <style>
+        /* 页面基础样式，适配手机 */
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            font-family: "微软雅黑", sans-serif;
+        }
+        /* 标题样式 */
+        .report-title {
+            text-align: center;
+            color: #d32f2f; /* 网易云红，可选 */
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        /* 图表容器：适配手机屏幕 */
+        .chart-container {
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="report-title">24小时聊天消息统计报告</h1>
+    <!-- 核心：嵌入生成的图表HTML -->
+    <iframe src="bar_hourly_chat_stats_mobile.html" class="chart-container" frameborder="0"></iframe>
+</body>
+</html>
